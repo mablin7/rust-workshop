@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Rust example",
+      "type": "shell",
+      "command": "cargo run --example ${input:example}",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "example",
+      "type": "pickString",
+      "description": "Select an example to run",
+      "options": [
+        "01-basic-variables",
+        "02-basic-types",
+        "03-control-flow",
+        "04-functions",
+        "05-strings",
+        "06-owners-and-moving",
+        "07-borrows",
+        "08-structs",
+        "09-enums",
+        "10-optional-result",
+        "11-generics-traits",
+        "12-iterators",
+        "13-concurrency",
+        "14-pathbuf",
+        "15-time"
+      ]
+    }
+  ]
+}
